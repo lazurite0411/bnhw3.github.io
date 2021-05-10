@@ -1,0 +1,44 @@
+<html>
+  <style>
+    a:hover {
+      color: red;
+    }
+  </style>
+  <head>
+    <title>生技一 賴柏彤</title>
+    <link rel="icon" href="danko.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="danko.ico" type="image/x-icon" />
+  </head>
+  <body style="background-color:#FFDA96;">
+  <div style="border-width:3px;border-style:double;border-color:#D69500;padding:5px;">
+  <pre>
+    <a href="http://www.wghs.tp.edu.tw/" target="_blank">私立薇閣高級中學</a>
+    <br>
+    <a href="http://www.bst.ntu.edu.tw/Default.html" target="_blank">臺灣大學生化科技學系</a>
+  </pre>
+  <pre>
+    興趣
+    1.聽音樂  <a href="http://www.youtube.com/" target="_blank">Youtube</a>
+    2.學日文  <a href="https://www.sigure.tw/" target="_blank">時雨の町</a>
+    3.旅行  <a href="https://www.japan.travel/jp/" target="_blank">日本國家旅遊局</a>
+    <img src="pic.jpg"width="300" height="400"> <br> &nbsp;&nbsp 寒假去谷關老街拍的照片
+  </pre>
+  <script language="JavaScript">
+    function ShowTime(){
+      var NowDate=new Date();
+      var h=NowDate.getHours();
+      var m=NowDate.getMinutes();
+      var s=NowDate.getSeconds();　
+      var y=NowDate.getFullYear();
+      var mon = NowDate.getMonth();
+      var date = NowDate.getDate();
+      document.getElementById('showbox').innerHTML =(mon+1)+'-'+date+'-'+y+' '+h+':'+m+':'+s;
+      setTimeout('ShowTime()',1000);
+    }
+  </script>
+  <body onload="ShowTime()">
+  <div id="showbox"></div>
+  </div>
+  </body>
+  <audio src = "kotonisakuhana.mp3" autoplay loop></audio>
+</html>
